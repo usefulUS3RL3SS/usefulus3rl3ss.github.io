@@ -1,15 +1,9 @@
-/*
 
-Template 2088 Big City
-
-http://www.tooplate.com/view/2088-big-city
-
-*/
 body {	
 	background: #18635d;
 	position: relative;
 	color: black;
-	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
 	font-size: 17px;
 	font-weight: 400;
 	overflow-x: hidden;
@@ -52,8 +46,8 @@ a:focus {
 	outline: none;
 }
 
-.tm-section-margin-t { margin-top: 200px; }
-.tm-section-margin-t-small { margin-top: 150px; }
+.tm-section-margin-t { margin-top: -250px; }
+.tm-section-margin-t-small { margin-top: -150px; }
 
 .cd-hero-slider li:first-of-type,
 .cd-hero-slider li:nth-of-type(2),
@@ -244,22 +238,66 @@ button:focus { outline: none; }
 .tm-height-100 { height: 100%; }
 .tm-white-border { border: 1px solid white; }
 
+/* Gallery */
+.cd-hero-slider h2.tm-margin-b-0 { margin-bottom: 0; }
+.tm-gallery-title-container { 
+	position: relative; 
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.tm-bg-white-half {
+	background-color: white;
+	width: 50%;
+	height: 126px;
+	position: absolute;
+	top: -10px;
+	left: -15px;
+	z-index: -1;
+}
+
+.tm-footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;	
+}
+
+.tm-footer {
+    width: 100%;
+    color: white;
+    z-index: 1001;
+    padding: 0 11px 12px;
+}
+
+.cd-full-width {
+	display: -ms-flexbox;
+	display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+.cd-hero-slider p:last-child { margin-bottom: 0; }
 
 /* Contact */
 .tm-contact-page {
 	margin: 0 auto;
-	max-width: 800px;
+	margin-top: -50px;
+	max-width: 900px;
 	padding: 0;
 }
 
-.tm-contact-container { max-width: 800px; }
+.tm-contact-container { max-width: 900px; }
 
 .form-control,
 .tm-submit-btn {
 	font-size: 1.8rem;
 }
 .form-control {
-	border-radius: 1;
+	border-radius: 0;
 	padding: 1rem 2rem;
 }
 
@@ -344,7 +382,7 @@ border-top-color: #ffffff; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 .tm-navbar {
 	position: absolute;
     right: 20px;
-    top: 440px;
+    top: 44px;
 }
 
 .cd-slider-nav .navbar-nav { background-color: #455471; }
@@ -371,7 +409,60 @@ border-top-color: #ffffff; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 
 .tm-2-col-textbox-2:last-child { margin-bottom: 0; }
 
+/* Gallery */
+.grid-item {
+	margin-bottom: 20px;
+	padding-left: 1px;
+	padding-right: 1px;
+	float: left;
+	width: 100%;
+}
 
+.grid-item-square { width: 50%; }
+
+.grid-item:last-child { margin-bottom: 0; }
+
+.tm-img-gallery {
+	margin: 0 auto 10px;
+	display: inline-block;
+}
+
+.tm-img {
+  	width: 100%;
+  	height: auto;
+  	border: 10px solid #ffffff;
+  	margin: 0 auto;
+}
+
+.tm-img-no-border {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.tm-textbox-padding { padding: 35px 30px; }
+
+.col-xs-12 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.tm-copyright-text {
+	background-color: rgba(0, 0, 0, 0.3);
+	color: white;
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 5px 12px;
+    width: 100%;
+}
+
+.tm-footer { padding: 50px 11px 20px; }
+.tm-footer-link { color: white; }
+.tm-footer-link:hover,
+.tm-footer-link:focus {
+	color: yellow;
+}
 
 /* Media Queries */
 @media only screen and (min-width: 480px) {
