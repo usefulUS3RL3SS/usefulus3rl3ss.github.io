@@ -1,3 +1,7 @@
+a.disabled {
+	text-decoration: none;
+	cursor: default;
+}
 
 body {	
 	background: #18635d;
