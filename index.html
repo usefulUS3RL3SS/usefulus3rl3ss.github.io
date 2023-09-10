@@ -193,9 +193,9 @@
         
         <script>
                 // Вешаем на прикосновение функцию handleTouchStart
-            addEventListener('touchstart', handleTouchStart, false);  
+            window.addEventListener('touchstart', handleTouchStart, false);  
 // А на движение пальцем по экрану - handleTouchMove      
-            addEventListener('touchmove', handleTouchMove, false);
+            window.addEventListener('touchmove', handleTouchMove, false);
 
             var xDown = null;                                                        
             var yDown = null;                                                        
