@@ -50,8 +50,8 @@ a:focus {
 	outline: none;
 }
 
-.tm-section-margin-t { margin-top: -250px; }
-.tm-section-margin-t-small { margin-top: -150px; }
+.tm-section-margin-t { margin-top: 40px; }
+.tm-section-margin-t-small { margin-top: 40px; }
 
 .cd-hero-slider li:first-of-type,
 .cd-hero-slider li:nth-of-type(2),
@@ -282,6 +282,7 @@ button:focus { outline: none; }
         align-items: center;
     -ms-flex-pack: center;
         justify-content: center;
+	padding-bottom: 0;
 }
 
 .cd-hero-slider p:last-child { margin-bottom: 0; }
