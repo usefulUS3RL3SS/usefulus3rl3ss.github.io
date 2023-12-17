@@ -64,7 +64,7 @@
             <ul class="cd-hero-slider">  <!-- autoplay -->
 
                 <!-- Page 1 Home -->
-                <li class="selected">
+                <li class="selected" id="1">
                     <div class="cd-full-width">
                         <div class="container js-tm-page-content tm-page-1 tm-section-margin-t-small" data-page-no="1">
                             <div class="row">                            
@@ -92,7 +92,7 @@
                 </li>
                 
                 <!-- Page 2 About -->
-                <li>
+                <li id="2">
                     <div class="cd-full-width">
                         <div class="container js-tm-page-content tm-section-margin-t" data-page-no="2">
                             <div class="row">
@@ -146,7 +146,7 @@
                
                
                 <!-- Page 3 Contact -->
-                <li>
+                <li id="3">
                     <div class="cd-full-width">
                         <div class="container js-tm-page-content tm-section-margin-t-small" data-page-no="3">                            
                             <div class="tm-contact-page">
@@ -205,7 +205,11 @@
             window.addEventListener('touchmove', handleTouchMove, false);
 
             var xDown = null;                                                        
-            var yDown = null;                                                        
+            var yDown = null;
+            
+            function mover(id) {
+
+            };
 
             function handleTouchStart(evt) {                                         
                 xDown = evt.touches[0].clientX;                                      
@@ -225,10 +229,10 @@
     
                 if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
                 if ( xDiff > 0 ) {
-                    
+                    pageNo += 1;
                     //alert("To right");
                 } else {
-
+                    pageNo -= 1;
                     //alert("To left");
                 }                                                                                       
                 }
