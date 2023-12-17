@@ -226,7 +226,7 @@
 
                 var xDiff = xDown - xUp;
                 var yDiff = yDown - yUp;
-    
+                var pageNo = $(".cd-hero-slider li.selected .js-tm-page-content").data("page-no");
                 if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
                 if ( xDiff > 0 ) {
                     pageNo += 1;
