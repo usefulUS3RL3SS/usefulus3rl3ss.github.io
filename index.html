@@ -200,9 +200,8 @@
 
 
         <script>
-                // Вешаем на прикосновение функцию handleTouchStart
             window.addEventListener('touchstart', handleTouchStart, false);  
-// А на движение пальцем по экрану - handleTouchMove      
+    
             window.addEventListener('touchmove', handleTouchMove, false);
 
             var xDown = null;                                                        
@@ -227,10 +226,10 @@
                 if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {
                 if ( xDiff > 0 ) {
                     
-                    //alert("To right");
+                    alert("To right");
                 } else {
 
-                    //alert("To left");
+                    alert("To left");
                 }                                                                                       
                 }
     /* reset values */
